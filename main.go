@@ -9,6 +9,7 @@ import (
 	"example.com/structs-practice/note"
 )
 
+// main is the entry point of the program. It collects user input for a note's title and content, creates a new Note instance, displays it, and saves it to a JSON file.
 func main() {
 	title, content := getNoteData()
 
@@ -30,6 +31,7 @@ func main() {
 	fmt.Println("Saving the note succeded!")
 }
 
+// getNoteData prompts the user for a note's title and content, returning both as strings.
 func getNoteData() (string, string) {
 	title := getUserInput("Note title:")
 
@@ -38,6 +40,7 @@ func getNoteData() (string, string) {
 	return title, content
 }
 
+// getUserInput prompts the user with the provided prompt string and reads a line of input from the command line, returning it as a string.
 func getUserInput(promt string) string {
 	fmt.Print(promt)
 	// for reading more than a single work from cmd line.
