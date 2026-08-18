@@ -34,7 +34,7 @@ go build -o structspractice
 
 ## Usage
 
-The app ships with an example note file, `firstnote.json` ([firstnote.json](firstnote.json)). Edit the JSON to try different inputs. The `note` package ([note/note.go](note/note.go)) contains the data structures and helpers used by `main.go`.
+The `note` package ([note/note.go](note/note.go)) contains the data structures and helpers used by `main.go`.
 
 ## Contributing
 
